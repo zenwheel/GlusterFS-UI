@@ -1,0 +1,4 @@
+This is a PrefPane (Control Panel) that allows you to mount remote Gluster
+FS volumes on your Mac OS X machine.  It also registers a boot agent to run at
+login to remount any volumes so they are always available to you.
+
