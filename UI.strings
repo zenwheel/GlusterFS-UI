@@ -1,0 +1,16 @@
+/* 
+   UI.strings
+   test
+
+   Created by Scott Jann on 5/10/09.
+   Copyright (c) 2009 Scott Jann
+ */
+
+"About Message" = "glusterfs PrefPane 1.0\nCopyright (c) 2009 Scott Jann\nYou may redistribute copies of GlusterFS PrefPane under the terms of the GNU General Public License.\n\n";
+"Mount" = "Mount";
+"Mounted" = "Mounted";
+"Automatic" = "--";
+"OK" = "OK";
+"MountError" = "Error mounting volume.";
+"MountErrorDetails" = "Make sure you've entered the server name and volume name correctly.";
+"NoMountpoint" = "Unable to create a mount point for the volume.";

@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65552DA50FBFB98000ABC8D1 /* AboutController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552D9F0FBFB98000ABC8D1 /* AboutController.h */; };
+		65552DA60FBFB98000ABC8D1 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DA00FBFB98000ABC8D1 /* AboutController.m */; };
+		65552DA70FBFB98000ABC8D1 /* AddController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552DA10FBFB98000ABC8D1 /* AddController.h */; };
+		65552DA80FBFB98000ABC8D1 /* AddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DA20FBFB98000ABC8D1 /* AddController.m */; };
+		65552DA90FBFB98000ABC8D1 /* MainController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552DA30FBFB98000ABC8D1 /* MainController.h */; };
+		65552DAA0FBFB98000ABC8D1 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DA40FBFB98000ABC8D1 /* MainController.m */; };
+		65552DAC0FBFB98800ABC8D1 /* UI.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65552DAB0FBFB98800ABC8D1 /* UI.strings */; };
+		65552DB30FBFB9F300ABC8D1 /* VolumeStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552DAF0FBFB9F300ABC8D1 /* VolumeStatus.h */; };
+		65552DB40FBFB9F300ABC8D1 /* VolumeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DB00FBFB9F300ABC8D1 /* VolumeList.m */; };
+		65552DB50FBFB9F300ABC8D1 /* VolumeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552DB10FBFB9F300ABC8D1 /* VolumeList.h */; };
+		65552DB60FBFB9F300ABC8D1 /* VolumeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DB20FBFB9F300ABC8D1 /* VolumeStatus.m */; };
+		65552DB90FBFBA3F00ABC8D1 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DB70FBFBA3F00ABC8D1 /* Login.m */; };
+		65552DBA0FBFBA3F00ABC8D1 /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552DB80FBFBA3F00ABC8D1 /* Login.h */; };
+		65552F090FBFECC800ABC8D1 /* GlusterFS.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552F080FBFECC800ABC8D1 /* GlusterFS.h */; };
+		658042CD0FC1296F0080E703 /* GlusterBoot in Resources */ = {isa = PBXBuildFile; fileRef = 658042CC0FC1296F0080E703 /* GlusterBoot */; };
+		65FCB7580FB6CE4900D19D7C /* Gluster_Ant.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FCB7570FB6CE4900D19D7C /* Gluster_Ant.png */; };
+		8D202CEA0486D31800D8A456 /* GlusterFS_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* GlusterFS_Prefix.pch */; };
+		8D202CEB0486D31800D8A456 /* GlusterFSPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* GlusterFSPref.h */; };
+		8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D202CEF0486D31800D8A456 /* GlusterFSPref.xib in Resources */ = {isa = PBXBuildFile; fileRef = F506C042013D9D8C01CA16C8 /* GlusterFSPref.xib */; };
+		8D202CF10486D31800D8A456 /* GlusterFSPref.m in Sources */ = {isa = PBXBuildFile; fileRef = F506C03D013D9D7901CA16C8 /* GlusterFSPref.m */; };
+		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA20370C41700C91783 /* GlusterFS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterFS_Prefix.pch; sourceTree = "<group>"; };
+		65552D9F0FBFB98000ABC8D1 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		65552DA00FBFB98000ABC8D1 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		65552DA10FBFB98000ABC8D1 /* AddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddController.h; sourceTree = "<group>"; };
+		65552DA20FBFB98000ABC8D1 /* AddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddController.m; sourceTree = "<group>"; };
+		65552DA30FBFB98000ABC8D1 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		65552DA40FBFB98000ABC8D1 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		65552DAB0FBFB98800ABC8D1 /* UI.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = UI.strings; sourceTree = "<group>"; };
+		65552DAF0FBFB9F300ABC8D1 /* VolumeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeStatus.h; sourceTree = "<group>"; };
+		65552DB00FBFB9F300ABC8D1 /* VolumeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeList.m; sourceTree = "<group>"; };
+		65552DB10FBFB9F300ABC8D1 /* VolumeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeList.h; sourceTree = "<group>"; };
+		65552DB20FBFB9F300ABC8D1 /* VolumeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeStatus.m; sourceTree = "<group>"; };
+		65552DB70FBFBA3F00ABC8D1 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		65552DB80FBFBA3F00ABC8D1 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		65552F080FBFECC800ABC8D1 /* GlusterFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterFS.h; sourceTree = "<group>"; };
+		658042CC0FC1296F0080E703 /* GlusterBoot */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = GlusterBoot; sourceTree = "<group>"; };
+		65FCB7570FB6CE4900D19D7C /* Gluster_Ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gluster_Ant.png; sourceTree = "<group>"; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D202CF80486D31800D8A456 /* GlusterFS.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlusterFS.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		F506C03C013D9D7901CA16C8 /* GlusterFSPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterFSPref.h; sourceTree = "<group>"; };
+		F506C03D013D9D7901CA16C8 /* GlusterFSPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlusterFSPref.m; sourceTree = "<group>"; };
+		F506C043013D9D8C01CA16C8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/GlusterFSPref.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D202CF20486D31800D8A456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
+				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* GlusterFS */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = GlusterFS;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				658042CC0FC1296F0080E703 /* GlusterBoot */,
+				65552DAB0FBFB98800ABC8D1 /* UI.strings */,
+				65FCB7570FB6CE4900D19D7C /* Gluster_Ant.png */,
+				8D202CF70486D31800D8A456 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				F506C042013D9D8C01CA16C8 /* GlusterFSPref.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65552DB70FBFBA3F00ABC8D1 /* Login.m */,
+				65552DB80FBFBA3F00ABC8D1 /* Login.h */,
+				65552DAF0FBFB9F300ABC8D1 /* VolumeStatus.h */,
+				65552DB00FBFB9F300ABC8D1 /* VolumeList.m */,
+				65552DB10FBFB9F300ABC8D1 /* VolumeList.h */,
+				65552DB20FBFB9F300ABC8D1 /* VolumeStatus.m */,
+				F506C03C013D9D7901CA16C8 /* GlusterFSPref.h */,
+				F506C03D013D9D7901CA16C8 /* GlusterFSPref.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				F506C035013D953901CA16C8 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF80486D31800D8A456 /* GlusterFS.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA10370C40200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65552D9F0FBFB98000ABC8D1 /* AboutController.h */,
+				65552DA00FBFB98000ABC8D1 /* AboutController.m */,
+				65552DA10FBFB98000ABC8D1 /* AddController.h */,
+				65552DA20FBFB98000ABC8D1 /* AddController.m */,
+				65552DA30FBFB98000ABC8D1 /* MainController.h */,
+				65552DA40FBFB98000ABC8D1 /* MainController.m */,
+				65552F080FBFECC800ABC8D1 /* GlusterFS.h */,
+				32DBCFA20370C41700C91783 /* GlusterFS_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D202CE90486D31800D8A456 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CEA0486D31800D8A456 /* GlusterFS_Prefix.pch in Headers */,
+				8D202CEB0486D31800D8A456 /* GlusterFSPref.h in Headers */,
+				65552DA50FBFB98000ABC8D1 /* AboutController.h in Headers */,
+				65552DA70FBFB98000ABC8D1 /* AddController.h in Headers */,
+				65552DA90FBFB98000ABC8D1 /* MainController.h in Headers */,
+				65552DB30FBFB9F300ABC8D1 /* VolumeStatus.h in Headers */,
+				65552DB50FBFB9F300ABC8D1 /* VolumeList.h in Headers */,
+				65552DBA0FBFBA3F00ABC8D1 /* Login.h in Headers */,
+				65552F090FBFECC800ABC8D1 /* GlusterFS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D202CE80486D31800D8A456 /* GlusterFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "GlusterFS" */;
+			buildPhases = (
+				8D202CE90486D31800D8A456 /* Headers */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				8D202CF00486D31800D8A456 /* Sources */,
+				8D202CF20486D31800D8A456 /* Frameworks */,
+				8D202CF50486D31800D8A456 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlusterFS;
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = GlusterFS;
+			productReference = 8D202CF80486D31800D8A456 /* GlusterFS.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "GlusterFS" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* GlusterFS */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D202CE80486D31800D8A456 /* GlusterFS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D202CEC0486D31800D8A456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */,
+				8D202CEF0486D31800D8A456 /* GlusterFSPref.xib in Resources */,
+				65FCB7580FB6CE4900D19D7C /* Gluster_Ant.png in Resources */,
+				65552DAC0FBFB98800ABC8D1 /* UI.strings in Resources */,
+				658042CD0FC1296F0080E703 /* GlusterBoot in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D202CF50486D31800D8A456 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D202CF00486D31800D8A456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF10486D31800D8A456 /* GlusterFSPref.m in Sources */,
+				65552DA60FBFB98000ABC8D1 /* AboutController.m in Sources */,
+				65552DA80FBFB98000ABC8D1 /* AddController.m in Sources */,
+				65552DAA0FBFB98000ABC8D1 /* MainController.m in Sources */,
+				65552DB40FBFB9F300ABC8D1 /* VolumeList.m in Sources */,
+				65552DB60FBFB9F300ABC8D1 /* VolumeStatus.m in Sources */,
+				65552DB90FBFBA3F00ABC8D1 /* Login.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F506C042013D9D8C01CA16C8 /* GlusterFSPref.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F506C043013D9D8C01CA16C8 /* English */,
+			);
+			name = GlusterFSPref.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD214908BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GlusterFS_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = GlusterFS;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DBD214A08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GlusterFS_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = GlusterFS;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+		1DBD214D08BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DBD214E08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "GlusterFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214908BA80EA00186707 /* Debug */,
+				1DBD214A08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "GlusterFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214D08BA80EA00186707 /* Debug */,
+				1DBD214E08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
