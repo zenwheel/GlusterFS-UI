@@ -1,0 +1,21 @@
+*** xlators/mount/fuse/src/fuse-bridge.c        2009-04-30 02:59:05.000000000 -0500
+--- /tmp/fuse-bridge.c  2009-04-30 03:00:55.000000000 -0500
+***************
+*** 2700,2713 ****
+       char **p = NULL;
+
+ #ifdef GF_DARWIN_HOST_OS
+-       char volnameparam[128];
+-       snprintf(volnameparam, sizeof(volnameparam), "volname=%s",
+this_xl->ctx->cmd_args.volume_name ?
+this_xl->ctx->cmd_args.volume_name : "glusterfs");
+       char *fuse_argv[] = {"glusterfs",
+                            "-o", "XXX",
+                            "-o", "fssubtype=glusterfs",
+                            "-o", "allow_other",
+                            "-o", "default_permissions",
+-                            "-o", volnameparam,
+                            NULL, NULL,
+                            NULL};
+
+--- 2700,2710 ----
