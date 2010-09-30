@@ -8,6 +8,7 @@
 
 #import "GlusterBootAppDelegate.h"
 #include <unistd.h>
+#include <crt_externs.h>
 
 @implementation GlusterBootAppDelegate
 
@@ -32,7 +33,17 @@
 			exit(-1);
 	} else {
 		NSLog(@"running as root");
-		
+
+		// allow mounting a specific volume from the command line
+		NSString *onlyVolume = nil;
+		NSString *onlyServer = nil;
+		char **argv = *_NSGetArgv();
+		if(*_NSGetArgc() == 3) {
+			onlyServer = [NSString stringWithUTF8String:argv[1]];
+			onlyVolume = [NSString stringWithUTF8String:argv[2]];
+			NSLog(@"mounting %@ from %@", onlyVolume, onlyServer);
+		}
+
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);   
 		NSString *appSupportDir = [paths objectAtIndex:0];   
 		NSString *appDir = [appSupportDir stringByAppendingPathComponent:@"GlusterFS"];
@@ -60,6 +71,11 @@
 			NSMutableDictionary *theRecord = [records objectAtIndex:i];
 			NSString *server = [theRecord objectForKey:@"server"];
 			NSString *volume = [theRecord objectForKey:@"volume"];
+			
+			if(onlyServer && onlyVolume) {
+				if([server isEqualToString:onlyServer] == NO || [volume isEqualToString:onlyVolume] == NO)
+					break;
+			}
 			NSString *path = [NSString stringWithFormat:@"/Volumes/GlusterFS/%@", volume];
 			NSString *commandLine = [NSString stringWithFormat:@"/usr/local/sbin/glusterfs --volfile-server=%@ --volume-name=%@ --log-file=/dev/null %@", server, volume, path];
 			BOOL isDirectory = NO;

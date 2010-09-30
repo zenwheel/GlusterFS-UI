@@ -23,6 +23,7 @@
 @private
 	VolumeList *volumes;
 	NSTimer *timer;
+	AuthorizationRef authorizationRef;
 }
 
 -(id) init;

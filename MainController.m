@@ -14,6 +14,7 @@
 @implementation MainController
 
 - (id) init {
+	authorizationRef = 0;
 	timer = [NSTimer scheduledTimerWithTimeInterval: 0.5 target: self selector: @selector(handleTimer:) userInfo: nil repeats: YES];
 	[myTable reloadData];
 	return self;
@@ -103,34 +104,18 @@
 		{
 			NSString *server = [(VolumeList*)[myTable dataSource] tableView:myTable objectValueForTableName:@"server" row:[myTable clickedRow]];
 			NSString *volume = [(VolumeList*)[myTable dataSource] tableView:myTable objectValueForTableName:@"volume" row:[myTable clickedRow]];
-			NSString *path = [NSString stringWithFormat:@"/Volumes/GlusterFS/%@", volume];
-			NSString *commandLine = [NSString stringWithFormat:@"/usr/local/sbin/glusterfs --volfile-server=%@ --volume-name=%@ --log-file=/dev/null %@", server, volume, path];
-			BOOL isDirectory = NO;
 			
-			if([[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory] == NO)
-				isDirectory = NO;
+			NSString *ourAppsPath = [NSString stringWithFormat:@"%@/Contents/Resources/GlusterBoot.app/Contents/MacOS/GlusterBoot", [[NSBundle bundleForClass:[self class]] bundlePath]];
+
+			OSStatus status = errAuthorizationSuccess;
 			
-			if(isDirectory == NO && [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil] == NO)
-			{
-				NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedStringFromTable(@"MountError", @"UI", nil)
-												 defaultButton:NSLocalizedStringFromTable(@"OK", @"UI", nil) alternateButton:nil otherButton:nil
-									 informativeTextWithFormat:NSLocalizedStringFromTable(@"NoMountpoint", @"UI", nil)];
-				[alert setAlertStyle:NSCriticalAlertStyle];
-				[alert beginSheetModalForWindow:[[prefPane mainView] window] modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
-			}				
+			if(authorizationRef == 0)
+				status = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagDefaults, &authorizationRef);
 			
-			NSLog(@"Attempting to mount volume %@ on server %@...", volume, server);
-			if([volume length] == 0)
-				commandLine = [NSString stringWithFormat:@"/usr/local/sbin/glusterfs --volfile-server=%@ --log-file=/dev/null %@", server, path];
-			int status = system([commandLine UTF8String]);
-			if(status != 0)
-			{
-				NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedStringFromTable(@"MountError", @"UI", nil)
-					defaultButton:NSLocalizedStringFromTable(@"OK", @"UI", nil) alternateButton:nil otherButton:nil
-					informativeTextWithFormat:NSLocalizedStringFromTable(@"MountErrorDetails", @"UI", nil)];
-				[alert setAlertStyle:NSCriticalAlertStyle];
-				[alert beginSheetModalForWindow:[[prefPane mainView] window] modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
-			}
+			char *args[] = {(char*)[server UTF8String], (char*)[volume UTF8String], NULL};
+			status = AuthorizationExecuteWithPrivileges(authorizationRef, [ourAppsPath UTF8String],
+														kAuthorizationFlagDefaults, args, NULL);
+			
 			[self refresh];
 		}
 	}
