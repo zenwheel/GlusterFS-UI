@@ -7,135 +7,209 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DD76F9A0486AA7600D96B5E /* GlusterBoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* GlusterBoot.m */; settings = {ATTRIBUTES = (); }; };
-		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* GlusterBootAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* GlusterBootAppDelegate.m */; };
+		6588B32712541BED00E3544D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6588B32612541BED00E3544D /* Security.framework */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* GlusterBoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlusterBoot.m; sourceTree = "<group>"; };
-		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32A70AAB03705E1F00C91783 /* GlusterBoot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterBoot_Prefix.pch; sourceTree = "<group>"; };
-		8DD76FA10486AA7600D96B5E /* GlusterBoot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GlusterBoot; sourceTree = BUILT_PRODUCTS_DIR; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* GlusterBootAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterBootAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* GlusterBootAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlusterBootAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* GlusterBoot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterBoot_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6588B32612541BED00E3544D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* GlusterBoot-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GlusterBoot-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* GlusterBoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlusterBoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				6588B32712541BED00E3544D /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08FB7794FE84155DC02AAC07 /* GlusterBoot */ = {
+		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				08FB7795FE84155DC02AAC07 /* Source */,
-				C6859EA2029092E104C91782 /* Documentation */,
-				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
-				1AB674ADFE9D54B511CA2CBB /* Products */,
+				256AC3D80F4B6AC300CF3369 /* GlusterBootAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* GlusterBootAppDelegate.m */,
 			);
-			name = GlusterBoot;
+			name = Classes;
 			sourceTree = "<group>";
 		};
-		08FB7795FE84155DC02AAC07 /* Source */ = {
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32A70AAB03705E1F00C91783 /* GlusterBoot_Prefix.pch */,
-				08FB7796FE84155DC02AAC07 /* GlusterBoot.m */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				6588B32612541BED00E3544D /* Security.framework */,
 			);
-			name = Source;
+			name = "Linked Frameworks";
 			sourceTree = "<group>";
 		};
-		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 			);
-			name = "External Frameworks and Libraries";
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DD76FA10486AA7600D96B5E /* GlusterBoot */,
+				8D1107320486CEB800E47090 /* GlusterBoot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6859EA2029092E104C91782 /* Documentation */ = {
+		29B97314FDCFA39411CA2CEA /* GlusterBoot */ = {
 			isa = PBXGroup;
 			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = Documentation;
+			name = GlusterBoot;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* GlusterBoot_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* GlusterBoot-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DD76F960486AA7600D96B5E /* GlusterBoot */ = {
+		8D1107260486CEB800E47090 /* GlusterBoot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "GlusterBoot" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GlusterBoot" */;
 			buildPhases = (
-				8DD76F990486AA7600D96B5E /* Sources */,
-				8DD76F9B0486AA7600D96B5E /* Frameworks */,
-				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GlusterBoot;
-			productInstallPath = "$(HOME)/bin";
+			productInstallPath = "$(HOME)/Applications";
 			productName = GlusterBoot;
-			productReference = 8DD76FA10486AA7600D96B5E /* GlusterBoot */;
-			productType = "com.apple.product-type.tool";
+			productReference = 8D1107320486CEB800E47090 /* GlusterBoot.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		08FB7793FE84155DC02AAC07 /* Project object */ = {
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "GlusterBoot" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GlusterBoot" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
-			mainGroup = 08FB7794FE84155DC02AAC07 /* GlusterBoot */;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* GlusterBoot */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DD76F960486AA7600D96B5E /* GlusterBoot */,
+				8D1107260486CEB800E47090 /* GlusterBoot */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8DD76F990486AA7600D96B5E /* Sources */ = {
+		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F9A0486AA7600D96B5E /* GlusterBoot.m in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* GlusterBootAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		1DEB927508733DD40010E9CD /* Debug */ = {
+		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -146,12 +220,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GlusterBoot_Prefix.pch;
-				INSTALL_PATH = /usr/local/bin;
+				INFOPLIST_FILE = "GlusterBoot-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = GlusterBoot;
 			};
 			name = Debug;
 		};
-		1DEB927608733DD40010E9CD /* Release */ = {
+		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -159,59 +234,62 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GlusterBoot_Prefix.pch;
-				INSTALL_PATH = /usr/local/bin;
+				INFOPLIST_FILE = "GlusterBoot-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = GlusterBoot;
 			};
 			name = Release;
 		};
-		1DEB927908733DD40010E9CD /* Debug */ = {
+		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
-		1DEB927A08733DD40010E9CD /* Release */ = {
+		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "GlusterBoot" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GlusterBoot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB927508733DD40010E9CD /* Debug */,
-				1DEB927608733DD40010E9CD /* Release */,
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "GlusterBoot" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GlusterBoot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB927908733DD40010E9CD /* Debug */,
-				1DEB927A08733DD40010E9CD /* Release */,
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
