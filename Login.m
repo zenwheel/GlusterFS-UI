@@ -14,7 +14,7 @@
 {
 	id obj;
 	
-	NSString *ourAppsPath = [NSString stringWithFormat:@"%@/Contents/Resources/GlusterBoot", [[NSBundle bundleForClass:[self class]] bundlePath]];
+	NSString *ourAppsPath = [NSString stringWithFormat:@"%@/Contents/Resources/GlusterBoot.app", [[NSBundle bundleForClass:[self class]] bundlePath]];
 	NSDictionary *loginItemDict = [NSDictionary dictionaryWithContentsOfFile:[NSString stringWithFormat:@"%@/Library/Preferences/loginwindow.plist", NSHomeDirectory()]];
 	NSEnumerator *loginItemEnumerator = [[loginItemDict objectForKey:@"AutoLaunchedApplicationDictionary"] objectEnumerator];
 	
@@ -41,7 +41,7 @@
 	
 	NSMutableDictionary *myDict = [[[NSMutableDictionary alloc] init] autorelease];
 	[myDict setObject:[NSNumber numberWithBool:NO] forKey:@"Hide"];
-	[myDict setObject:[NSString stringWithFormat:@"%@/Contents/Resources/GlusterBoot", [[NSBundle bundleForClass:[self class]] bundlePath]] forKey:@"Path"];
+	[myDict setObject:[NSString stringWithFormat:@"%@/Contents/Resources/GlusterBoot.app", [[NSBundle bundleForClass:[self class]] bundlePath]] forKey:@"Path"];
 	
 	[loginItems removeObject:myDict]; //make sure it's not already in there 
 	[loginItems addObject:myDict]; 
