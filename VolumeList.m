@@ -95,6 +95,7 @@
     theRecord = [records objectAtIndex:rowIndex];
     [theRecord setObject:attrString forKey:@"status"];
 	[aTableView reloadData];
+	[attrString release];
 }
 
 - (void) tableView:(NSTableView *)aTableView

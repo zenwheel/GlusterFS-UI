@@ -17,6 +17,7 @@
 	Login *l = [[Login alloc] init];
 	if([l isLoginItem] == NO)
 		[l setLoginItem];	
+	[l release];
 }
 
 @end

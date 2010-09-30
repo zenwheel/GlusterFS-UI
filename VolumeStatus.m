@@ -57,8 +57,8 @@
 		if(server[0] != 0)
 		{
 			NSMutableDictionary *item = [NSMutableDictionary dictionaryWithCapacity:2];
-			[item setObject:[[NSString alloc] initWithUTF8String:volume] forKey:@"volume"];
-			[item setObject:[[NSString alloc]  initWithUTF8String:server] forKey:@"server"];
+			[item setObject:[NSString stringWithUTF8String:volume] forKey:@"volume"];
+			[item setObject:[NSString stringWithUTF8String:server] forKey:@"server"];
 			[processList insertObject:item atIndex:[processList count]];
 		}
 	}

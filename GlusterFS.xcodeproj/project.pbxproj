@@ -21,7 +21,6 @@
 		65552DB90FBFBA3F00ABC8D1 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 65552DB70FBFBA3F00ABC8D1 /* Login.m */; };
 		65552DBA0FBFBA3F00ABC8D1 /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552DB80FBFBA3F00ABC8D1 /* Login.h */; };
 		65552F090FBFECC800ABC8D1 /* GlusterFS.h in Headers */ = {isa = PBXBuildFile; fileRef = 65552F080FBFECC800ABC8D1 /* GlusterFS.h */; };
-		658042CD0FC1296F0080E703 /* GlusterBoot in Resources */ = {isa = PBXBuildFile; fileRef = 658042CC0FC1296F0080E703 /* GlusterBoot */; };
 		65FCB7580FB6CE4900D19D7C /* Gluster_Ant.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FCB7570FB6CE4900D19D7C /* Gluster_Ant.png */; };
 		8D202CEA0486D31800D8A456 /* GlusterFS_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* GlusterFS_Prefix.pch */; };
 		8D202CEB0486D31800D8A456 /* GlusterFSPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* GlusterFSPref.h */; };
@@ -52,7 +51,6 @@
 		65552DB70FBFBA3F00ABC8D1 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		65552DB80FBFBA3F00ABC8D1 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		65552F080FBFECC800ABC8D1 /* GlusterFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlusterFS.h; sourceTree = "<group>"; };
-		658042CC0FC1296F0080E703 /* GlusterBoot */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = GlusterBoot; sourceTree = "<group>"; };
 		65FCB7570FB6CE4900D19D7C /* Gluster_Ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gluster_Ant.png; sourceTree = "<group>"; };
 		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D202CF80486D31800D8A456 /* GlusterFS.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlusterFS.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +97,6 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				658042CC0FC1296F0080E703 /* GlusterBoot */,
 				65552DAB0FBFB98800ABC8D1 /* UI.strings */,
 				65FCB7570FB6CE4900D19D7C /* Gluster_Ant.png */,
 				8D202CF70486D31800D8A456 /* Info.plist */,
@@ -214,7 +211,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "GlusterFS" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* GlusterFS */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +237,6 @@
 				8D202CEF0486D31800D8A456 /* GlusterFSPref.xib in Resources */,
 				65FCB7580FB6CE4900D19D7C /* Gluster_Ant.png in Resources */,
 				65552DAC0FBFB98800ABC8D1 /* UI.strings in Resources */,
-				658042CD0FC1296F0080E703 /* GlusterBoot in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,25 +324,27 @@
 		1DBD214D08BA80EA00186707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
 		1DBD214E08BA80EA00186707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};

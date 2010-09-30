@@ -30,8 +30,8 @@
 	if(returnCode == NSCancelButton)
 		return;
 
-	[[myTable dataSource] tableView:myTable addVolume:[volumeText stringValue] onServer:[serverText stringValue]];
-	[[myTable dataSource] saveToFile];
+	[(VolumeList*)[myTable dataSource] tableView:myTable addVolume:[volumeText stringValue] onServer:[serverText stringValue]];
+	[(VolumeList*)[myTable dataSource] saveToFile];
 	[self refresh];
 }
 
@@ -45,7 +45,7 @@
 	if(f != NULL)
 	{
 		while(fgets(buf, sizeof(buf), f)) {
-			[glusterText appendString:[[NSString alloc] initWithUTF8String:buf]];
+			[glusterText appendString:[NSString stringWithUTF8String:buf]];
 		}
 	}
 	pclose(f);
@@ -62,8 +62,8 @@
 }
 
 -(IBAction) deleteButton:(id) sender {
-	[[myTable dataSource] tableView:myTable deleteRow:[myTable selectedRow]];
-	[[myTable dataSource] saveToFile];
+	[(VolumeList*)[myTable dataSource] tableView:myTable deleteRow:[myTable selectedRow]];
+	[(VolumeList*)[myTable dataSource] saveToFile];
 }
 
 -(IBAction) refreshButton: (id) sender {
@@ -79,7 +79,7 @@
 		NSString *status = NSLocalizedStringFromTable(@"Mount", @"UI", nil);
 		if([s isMounted:[v tableView:myTable objectValueForTableName:@"volume" row:i] onServer:[v tableView:myTable objectValueForTableName:@"server" row:i]])
 			status = NSLocalizedStringFromTable(@"Mounted", @"UI", nil);
-		[[myTable dataSource] tableView:myTable setStatus:i withStatus:status];
+		[(VolumeList*)[myTable dataSource] tableView:myTable setStatus:i withStatus:status];
 	}
 	[s release];
 }
@@ -98,11 +98,11 @@
 
 -(IBAction) clickTable: (id) sender {
 	if([myTable clickedColumn] == 2) {
-		NSString *status = [[[myTable dataSource] tableView:myTable objectValueForTableName:@"status" row:[myTable clickedRow]] string];
+		NSString *status = [[(VolumeList*)[myTable dataSource] tableView:myTable objectValueForTableName:@"status" row:[myTable clickedRow]] string];
 		if([status isEqualToString:NSLocalizedStringFromTable(@"Mount", @"UI", nil)])
 		{
-			NSString *server = [[myTable dataSource] tableView:myTable objectValueForTableName:@"server" row:[myTable clickedRow]];
-			NSString *volume = [[myTable dataSource] tableView:myTable objectValueForTableName:@"volume" row:[myTable clickedRow]];
+			NSString *server = [(VolumeList*)[myTable dataSource] tableView:myTable objectValueForTableName:@"server" row:[myTable clickedRow]];
+			NSString *volume = [(VolumeList*)[myTable dataSource] tableView:myTable objectValueForTableName:@"volume" row:[myTable clickedRow]];
 			NSString *path = [NSString stringWithFormat:@"/Volumes/GlusterFS/%@", volume];
 			NSString *commandLine = [NSString stringWithFormat:@"/usr/local/sbin/glusterfs --volfile-server=%@ --volume-name=%@ --log-file=/dev/null %@", server, volume, path];
 			BOOL isDirectory = NO;
@@ -147,7 +147,7 @@
 - (BOOL)tableView:(NSTableView *)aTableView shouldEditTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
 	BOOL result = YES;
 	if([[aTableColumn identifier] isEqualToString:@"volume"]) {
-		NSString *val = [[myTable dataSource] tableView:myTable objectValueForTableName:[aTableColumn identifier] row:rowIndex];
+		NSString *val = [(VolumeList*)[myTable dataSource] tableView:myTable objectValueForTableName:[aTableColumn identifier] row:rowIndex];
 		if([val isEqualToString:NSLocalizedStringFromTable(@"Automatic", @"UI", nil)])
 			result = NO;
 	}
