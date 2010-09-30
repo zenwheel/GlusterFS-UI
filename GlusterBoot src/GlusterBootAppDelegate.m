@@ -15,8 +15,8 @@
 @synthesize window;
 
 
-- (void)alert:(NSString*)name {
-	NSRunAlertPanel(@"Error Mounting Volume", [NSString stringWithFormat:@"Could not mount volume '%@'", name], @"OK", nil, nil);
+- (void)alert:(NSString*)message withVolume:(NSString*)name {
+	NSRunAlertPanel(message, [NSString stringWithFormat:@"Could not mount volume '%@'", name], @"OK", nil, nil);
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -84,7 +84,7 @@
 				isDirectory = NO;
 			
 			if(isDirectory == NO && [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil] == NO) {
-				[self alert:volume];
+				[self alert:@"Error creating mount point" withVolume:volume];
 				NSLog(@"Error creating mount point");
 			}
 			
@@ -93,7 +93,7 @@
 				commandLine = [NSString stringWithFormat:@"/usr/local/sbin/glusterfs --volfile-server=%@ --log-file=/dev/null %@", server, path];
 			int status = system([commandLine UTF8String]);
 			if(status != 0) {
-				[self alert:volume];
+				[self alert:@"Error mounting volume" withVolume:volume];
 				NSLog(@"Error mounting volume");
 			}
 		}	
